@@ -61,7 +61,6 @@ class Song
   end
 
   def self.create_from_filename(name)
-    binding.pry
     if !self.find_by_name(name.split(' - ')[1])
       song = self.new_from_filename(name)
       song
